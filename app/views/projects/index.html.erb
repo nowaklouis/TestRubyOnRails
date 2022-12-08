@@ -1,19 +1,19 @@
 <p style="color: green"><%= notice %></p>
-<nav class="navbar bg-danger">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Projet Ruby on Rails</span>
-  </div>
-</nav>
+
 
 <h1>Projects</h1>
 
-<div id="projects">
+<div id="projects" class="bg-light shadow p-3 mb-5 rounded">
   <% @projects.each do |project| %>
     <%= render project %>
-    <p>
-      <%= link_to "Show this project", project %>
-    </p>
+    <button type="button" class="btn btn-light shadow p-3 mb-5 rounded " >
+      <p>
+       <%= link_to "Show this project", project %>
+      </p>
+    </button>
+    <hr>
   <% end %>
+  
 </div>
 
 <%= link_to "New project", new_project_path %>
