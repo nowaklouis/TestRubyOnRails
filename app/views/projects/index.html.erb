@@ -2,6 +2,9 @@
 
 
 <h1>Projects</h1>
+<div class="btn btn-light shadow p-3 mb-5 rounded text-decoration:none">
+   <%= link_to "New project", new_project_path %>
+</div>
 
 <div id="projects" class="bg-light shadow p-3 mb-5 rounded">
   <% @projects.each do |project| %>
@@ -16,4 +19,4 @@
   
 </div>
 
-<%= link_to "New project", new_project_path %>
+
